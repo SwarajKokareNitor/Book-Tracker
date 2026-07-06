@@ -1,0 +1,20 @@
+<div class="book-card" (click)="handleCardClick()" [style.border-left-color]="book.cover_color || '#cccccc'">
+  <div class="card-header">
+    <h3 class="book-title">{{ book.title }}</h3>
+    <button class="delete-btn" (click)="handleDeleteClick($event)">×</button>
+  </div>
+
+  <p class="book-author">by {{ book.author }}</p>
+
+  <p class="book-genre" *ngIf="book.genre">{{ book.genre }}</p>
+
+  <div class="card-footer">
+    <span class="status-badge" [ngClass]="getStatusBadgeClass()">
+      {{ getStatusLabel() }}
+    </span>
+
+    <div class="rating" *ngIf="book.rating">
+      <span class="star" *ngFor="let star of getRatingArray()">★</span>
+    </div>
+  </div>
+</div>
