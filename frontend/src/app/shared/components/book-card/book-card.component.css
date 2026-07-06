@@ -1,0 +1,100 @@
+.book-card {
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid;
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.book-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+.book-author {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.book-genre {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-wishlist {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.status-reading {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-finished {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.rating {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #f39c12;
+  font-size: 16px;
+}
