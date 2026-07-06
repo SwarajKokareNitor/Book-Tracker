@@ -4,34 +4,13 @@
 .env
 AGENTS.md 
 GEMINI.md 
-*.lock
+./node_modules
+./environment
 
-# Venv
-venv/
-.venv/
-
-# Python cache
-__pycache__/
-*.py[cod]
-
-# PyInstaller
-*.spec
-
-# Coverage reports
-.coverage
-htmlcov/
-
-# Jupyter Notebook lock files
-.ipynb_checkpoints/
-
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-
-# Editor configs
-.idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-*.toml
+# Frontend ignores
+frontend/.angular/
+frontend/node_modules/
+frontend/dist/
+frontend/out-tsc/
+frontend/src/environments/environment.ts
+frontend/src/environments/environment.prod.ts
