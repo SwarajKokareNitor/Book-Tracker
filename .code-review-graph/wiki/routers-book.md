@@ -12,11 +12,11 @@ Directory-based community: routers
 
 | Name | Kind | File | Lines |
 |------|------|------|-------|
-| create_book | Function | D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py | 13-26 |
-| get_books | Function | D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py | 30-48 |
-| get_book | Function | D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py | 52-56 |
-| update_book | Function | D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py | 60-78 |
-| delete_book | Function | D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py | 82-89 |
+| create_book | Function | E:\Book-Tracker\backend\app\routers\books.py | 13-26 |
+| get_books | Function | E:\Book-Tracker\backend\app\routers\books.py | 30-48 |
+| get_book | Function | E:\Book-Tracker\backend\app\routers\books.py | 52-56 |
+| update_book | Function | E:\Book-Tracker\backend\app\routers\books.py | 60-78 |
+| delete_book | Function | E:\Book-Tracker\backend\app\routers\books.py | 82-89 |
 
 ## Execution Flows
 
@@ -44,4 +44,4 @@ No execution flows pass through this community.
 
 ### Incoming
 
-- `D:\Book-Tracker-Backend\Book-Tracker\backend\app\routers\books.py` (5 edge(s))
+- `E:\Book-Tracker\backend\app\routers\books.py` (5 edge(s))

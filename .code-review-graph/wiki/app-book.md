@@ -12,9 +12,9 @@ Directory-based community: schemas
 
 | Name | Kind | File | Lines |
 |------|------|------|-------|
-| BookCreate | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 6-14 |
-| BookUpdate | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 17-25 |
-| BookOut | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 28-44 |
+| BookCreate | Class | E:\Book-Tracker\backend\app\schemas.py | 6-14 |
+| BookUpdate | Class | E:\Book-Tracker\backend\app\schemas.py | 17-25 |
+| BookOut | Class | E:\Book-Tracker\backend\app\schemas.py | 28-44 |
 
 ## Execution Flows
 
@@ -28,4 +28,4 @@ No execution flows pass through this community.
 
 ### Incoming
 
-- `D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py` (3 edge(s))
+- `E:\Book-Tracker\backend\app\schemas.py` (3 edge(s))
