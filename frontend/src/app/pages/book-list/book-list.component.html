@@ -1,0 +1,62 @@
+<div class="book-list-container">
+  <div class="header">
+    <h1>My Book Collection</h1>
+    <button class="add-book-btn" (click)="navigateToNewBook()">+ Add Book</button>
+  </div>
+
+  <div class="filter-bar">
+    <div class="status-tabs">
+      <button 
+        class="status-tab" 
+        [class.active]="selectedStatus === 'all'"
+        (click)="onStatusChange('all')">
+        All
+      </button>
+      <button 
+        class="status-tab" 
+        [class.active]="selectedStatus === 'wishlist'"
+        (click)="onStatusChange('wishlist')">
+        Wishlist
+      </button>
+      <button 
+        class="status-tab" 
+        [class.active]="selectedStatus === 'reading'"
+        (click)="onStatusChange('reading')">
+        Reading
+      </button>
+      <button 
+        class="status-tab" 
+        [class.active]="selectedStatus === 'finished'"
+        (click)="onStatusChange('finished')">
+        Finished
+      </button>
+    </div>
+
+    <div class="filter-controls">
+      <select class="genre-select" [value]="selectedGenre" (change)="onGenreChange($event)">
+        <option value="all">All Genres</option>
+        <option *ngFor="let genre of genres" [value]="genre">{{ genre }}</option>
+      </select>
+
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="Search books..."
+        [value]="searchText"
+        (input)="onSearchChange($event)">
+    </div>
+  </div>
+
+  <div class="books-grid" *ngIf="books.length > 0">
+    <app-book-card 
+      *ngFor="let book of books"
+      [book]="book"
+      (onDelete)="onBookDelete($event)"
+      (onSelect)="onBookSelect($event)">
+    </app-book-card>
+  </div>
+
+  <div class="empty-state" *ngIf="books.length === 0">
+    <p>No books found. Add your first book to get started!</p>
+  </div>
+</div>

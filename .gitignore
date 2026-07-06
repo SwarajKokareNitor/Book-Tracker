@@ -4,3 +4,13 @@
 .env
 AGENTS.md 
 GEMINI.md 
+./node_modules
+./environment
+
+# Frontend ignores
+frontend/.angular/
+frontend/node_modules/
+frontend/dist/
+frontend/out-tsc/
+frontend/src/environments/environment.ts
+frontend/src/environments/environment.prod.ts
