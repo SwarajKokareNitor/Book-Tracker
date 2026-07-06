@@ -2,9 +2,9 @@
 
 ## Overview
 
-Directory-based community: schemas
+Directory-based community: backend/app
 
-- **Size**: 3 nodes
+- **Size**: 5 nodes
 - **Cohesion**: 0.0000
 - **Dominant Language**: python
 
@@ -12,9 +12,11 @@ Directory-based community: schemas
 
 | Name | Kind | File | Lines |
 |------|------|------|-------|
-| BookCreate | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 6-14 |
-| BookUpdate | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 17-25 |
-| BookOut | Class | D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py | 28-44 |
+| get_db | Function | D:\FE_BE_Code_Generator\Book-Tracker\backend\app\database.py | 16-21 |
+| Book | Class | D:\FE_BE_Code_Generator\Book-Tracker\backend\app\models.py | 6-22 |
+| BookCreate | Class | D:\FE_BE_Code_Generator\Book-Tracker\backend\app\schemas.py | 6-14 |
+| BookUpdate | Class | D:\FE_BE_Code_Generator\Book-Tracker\backend\app\schemas.py | 17-25 |
+| BookOut | Class | D:\FE_BE_Code_Generator\Book-Tracker\backend\app\schemas.py | 28-44 |
 
 ## Execution Flows
 
@@ -25,7 +27,12 @@ No execution flows pass through this community.
 ### Outgoing
 
 - `BaseModel` (3 edge(s))
+- `SessionLocal` (1 edge(s))
+- `close` (1 edge(s))
+- `Base` (1 edge(s))
 
 ### Incoming
 
-- `D:\Book-Tracker-Backend\Book-Tracker\backend\app\schemas.py` (3 edge(s))
+- `D:\FE_BE_Code_Generator\Book-Tracker\backend\app\schemas.py` (3 edge(s))
+- `D:\FE_BE_Code_Generator\Book-Tracker\backend\app\database.py` (1 edge(s))
+- `D:\FE_BE_Code_Generator\Book-Tracker\backend\app\models.py` (1 edge(s))
