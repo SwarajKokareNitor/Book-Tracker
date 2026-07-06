@@ -14,3 +14,5 @@ frontend/dist/
 frontend/out-tsc/
 frontend/src/environments/environment.ts
 frontend/src/environments/environment.prod.ts
+*.toml
+*.lock
