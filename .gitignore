@@ -4,3 +4,34 @@
 .env
 AGENTS.md 
 GEMINI.md 
+*.lock
+
+# Venv
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# PyInstaller
+*.spec
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Jupyter Notebook lock files
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Editor configs
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.toml
